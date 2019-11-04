@@ -1,0 +1,5 @@
+sudo certbot certonly \
+--email tommy-brace-22@hotmail.com  \
+--rsa-key-size 4096 \
+--authenticator manual \
+--domain www.tomandgrace.co.uk

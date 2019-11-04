@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tomandgrace.test$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^tomandgrace.test$
+RewriteCond %{REQUEST_URI} !web/
+RewriteRule (.*) /web/$1 [L]
