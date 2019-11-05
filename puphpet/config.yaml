@@ -41,8 +41,8 @@ vagrantfile:
           - "--hiera_config /opt/puphpet/puppet/hiera.yaml"
     synced_folder:
       folder1:
-        owner: vagrant
-        group: vagrant
+        owner: www-data
+        group: www-data
         source: ./
         target: /var/www
         sync_type: default
@@ -214,7 +214,7 @@ apache:
           path: \.php$
           sethandler: "proxy:fcgi://127.0.0.1:9000"
 letsencrypt:
-  install: "1"
+  install: "0"
   settings:
     email: ""
     webserver_service: ""
@@ -228,6 +228,7 @@ php:
       - cli
       - intl
       - xml
+      - mbstring
     pear: {}
     pecl: {}
   ini:
