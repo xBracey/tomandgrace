@@ -1,10 +1,32 @@
-<header class="banner">
-  <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+<header>
+  <div class="header-container">
+
+    <div class="logo-container">
+      <a class="logo" href="/">
+        <p>TG</p>
+      </a>
+    </div>
+
+    <div class="menu-container">
+
+      <div class="search">
+        <input type="search" class="search-input"/>
+        <img src="@asset('images/search-24px.svg')" class="search-button" role="button"/>
+      </div>
+
+      <a href="/blog">
+        <p>Blog</p>
+      </a>
+      <a href="/about">
+        <p>About</p>
+      </a>
+
+      <a class="login" href="/wp/wp-admin">
+        Login
+      </a>
+
+    </div>
+
   </div>
+
 </header>
