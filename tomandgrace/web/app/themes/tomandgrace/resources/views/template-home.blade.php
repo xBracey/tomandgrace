@@ -4,12 +4,11 @@
 
 @extends('layouts.app')
 
-@section('content')
-  @include('partials.page-header')
 
-  @while ($loop->have_posts()) @php($loop->the_post())
-    @include('partials.home-blog')
-  @endwhile
+@section('content')
+  @include('partials.featured-blogs')
+
+  @include('partials.about-us')
 
   {!! get_the_posts_navigation() !!}
 @endsection

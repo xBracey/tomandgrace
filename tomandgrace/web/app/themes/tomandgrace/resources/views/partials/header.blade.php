@@ -1,6 +1,5 @@
 <header>
   <div class="header-container">
-
     <div class="logo-container">
       <a class="logo" href="/">
         <p>TG</p>
@@ -21,12 +20,10 @@
         <p>About</p>
       </a>
 
-      <a class="login" href="/wp/wp-admin">
+      <a class="login" href="/wp/wp-login.php">
         Login
       </a>
 
     </div>
-
   </div>
-
 </header>

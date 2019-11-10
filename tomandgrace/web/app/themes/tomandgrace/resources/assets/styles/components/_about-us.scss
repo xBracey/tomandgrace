@@ -1,0 +1,35 @@
+.about-us-outer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $green;
+}
+
+.about-us-inner-container {
+  width: 100%;
+  padding: 50px 100px;
+  max-width: 1200px;
+
+  h2 {
+    color: $white;
+    margin: 0 25px 25px 25px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  img {
+    width: 300px;
+    margin-right: 50px;
+    border-radius: 20px;
+    border: 10px solid $white;
+    align-self: center;
+  }
+
+  .about-us-info {
+    display: flex;
+
+    .information {
+      flex: 1;
+    }
+  }
+}
