@@ -28,7 +28,8 @@
     height: 225px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   h2 {

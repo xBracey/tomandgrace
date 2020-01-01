@@ -3,7 +3,7 @@
     <h2> {{ $about_us_header }} </h2>
 
     <div class="about-us-info">
-      <img src="{{ $about_us_picture }}" />
+      <img src="{{ wp_get_attachment_image_src($about_us_picture, 'medium')[0] }}" />
       <div class="information">
         {!! $about_us_information !!}
       </div>
