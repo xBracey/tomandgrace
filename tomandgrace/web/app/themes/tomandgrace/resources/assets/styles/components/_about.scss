@@ -1,0 +1,45 @@
+article.about {
+  display: flex;
+  flex-direction: row;
+
+  .tom-content,
+  .grace-content {
+    flex: 1;
+    min-height: calc(100vh - 200px);
+    padding: 75px 50px 50px 50px;
+  }
+
+  .tom-content {
+    background-color: $green;
+
+    .content-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 0 0 auto;
+    }
+
+    p,
+    h1,
+    h2,
+    h3 {
+      color: $white;
+    }
+  }
+
+  .grace-content {
+    background-color: $cream;
+
+    .content-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto 0 0;
+    }
+
+    p,
+    h1,
+    h2,
+    h3 {
+      color: $grey;
+    }
+  }
+}
