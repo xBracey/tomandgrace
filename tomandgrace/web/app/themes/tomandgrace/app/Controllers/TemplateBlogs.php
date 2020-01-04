@@ -20,7 +20,7 @@ class TemplateBlogs extends Controller
                 'post_type' => 'post',
                 'posts_per_page' => '-1',
             ];
-        } else if ($type = "tom") {
+        } else if ($type == "tom") {
             $args = [
                 'post_type' => 'post',
                 'posts_per_page' => '-1',
