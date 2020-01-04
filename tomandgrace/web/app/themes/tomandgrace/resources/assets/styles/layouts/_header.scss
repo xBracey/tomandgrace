@@ -4,6 +4,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100px;
+  position: relative;
 }
 
 .header-container {
@@ -11,13 +12,13 @@ header {
   max-width: 1200px;
   width: 100%;
   display: flex;
-  position: relative;
 
   .logo {
     position: absolute;
     width: 125px;
     margin: 0 25px;
     z-index: 1;
+    top: 30px;
   }
 }
 
@@ -27,6 +28,10 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+
+  @include mobile {
+    display: none;
+  }
 
   a {
     margin: 0 40px;

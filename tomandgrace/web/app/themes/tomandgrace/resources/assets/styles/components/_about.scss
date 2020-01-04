@@ -2,6 +2,10 @@ article.about {
   display: flex;
   flex-direction: row;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .tom-content,
   .grace-content {
     flex: 1;

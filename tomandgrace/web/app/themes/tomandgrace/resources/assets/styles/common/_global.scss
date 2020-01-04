@@ -16,3 +16,15 @@ p {
   color: $white;
   font-family: "Rubik", sans-serif;
 }
+
+@mixin mobile {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 900px) {
+    @content;
+  }
+}

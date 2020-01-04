@@ -7,7 +7,7 @@
 
 .about-us-inner-container {
   width: 100%;
-  padding: 50px 100px;
+  padding: 50px 25px;
   max-width: 1200px;
 
   h2 {
@@ -19,14 +19,25 @@
 
   img {
     width: 300px;
-    margin-right: 50px;
     border-radius: 20px;
     border: 10px solid $white;
     align-self: center;
+    margin: 25px 0;
+    margin-right: 50px;
+
+    @include mobile {
+      width: 250px;
+      margin-right: 0;
+    }
   }
 
   .about-us-info {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .information {
       flex: 1;
