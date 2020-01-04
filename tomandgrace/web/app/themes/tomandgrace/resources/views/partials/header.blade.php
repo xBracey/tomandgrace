@@ -23,5 +23,9 @@
       </a>
 
     </div>
+
+
+    <img class="mobile-menu" src="@asset('images/menu.svg')" menu-src="@asset('images/menu.svg')"
+      close-src="@asset('images/close.svg')">
   </div>
 </header>
