@@ -1,16 +1,14 @@
 <header>
   <div class="header-container">
-    <div class="logo-container">
-      <a class="logo" href="/">
-        <p>TG</p>
-      </a>
-    </div>
+    <a href="/">
+      <img src="@asset('images/logo.png')" class="logo" role="button" />
+    </a>
 
     <div class="menu-container">
 
       <div class="search">
-        <input type="search" class="search-input"/>
-        <img src="@asset('images/search-24px.svg')" class="search-button" role="button"/>
+        <input type="search" class="search-input" />
+        <img src="@asset('images/search-24px.svg')" class="search-button" role="button" />
       </div>
 
       <a href="/blog">
