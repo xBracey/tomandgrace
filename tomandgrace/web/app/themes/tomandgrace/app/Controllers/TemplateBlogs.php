@@ -40,7 +40,7 @@ class TemplateBlogs extends Controller
         return $query;
     }
 
-    public function getType()
+    public static function getType()
     {
         if (!isset($_GET['type'])) {
             return "all";
