@@ -17,6 +17,17 @@ article {
     h3 {
       color: $grey;
     }
+
+    blockquote {
+      background-color: black;
+      padding: 25px;
+      border-radius: 10px;
+      margin: 50px 25px;
+
+      p {
+        color: white;
+      }
+    }
   }
 
   .blog-header-container {
@@ -79,5 +90,10 @@ article {
         text-align: center;
       }
     }
+  }
+
+  img.aligncenter {
+    display: flex;
+    margin: auto;
   }
 }
